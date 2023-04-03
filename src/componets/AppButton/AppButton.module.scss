@@ -1,0 +1,14 @@
+.app_btn {
+    border: 1px solid #E55241;
+    border-radius: 4px;
+    color: #E55241;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 16px;
+    font-family: Proxima Nova;
+    &:active {
+        opacity: 0.5;
+        transform: rotateX(15deg);
+    }
+}

@@ -1,0 +1,35 @@
+.blockitem {
+    display: flex;
+    flex: 0 1 25%;
+    border: 1px solid #DBDFEC;
+    border-radius: 15px 15px 10px 10px;
+    flex-direction: column;
+    margin: 0px -15px;
+    cursor: pointer;
+    &:hover {
+        color: #E55241;
+        -webkit-box-shadow: 4px 4px 44px 0px rgba(34, 60, 80, 0.35);
+        -moz-box-shadow: 4px 4px 44px 0px rgba(34, 60, 80, 0.35);
+        box-shadow: 4px 4px 44px 0px rgba(34, 60, 80, 0.35);
+    }
+    @media screen and (max-width:768px){
+        flex: 0 1 50%;
+        margin: 0px -5px;
+        
+    }
+    img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.block_title {
+    padding: 0px 15px 20px 15px;
+    max-width: 224px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+}

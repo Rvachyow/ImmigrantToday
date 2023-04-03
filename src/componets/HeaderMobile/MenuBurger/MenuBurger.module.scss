@@ -1,0 +1,94 @@
+.burger {
+    z-index: 50;
+    position: fixed;
+    background-color: white;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.navitems {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    text-align: center;
+    li {
+        cursor: pointer;
+    }
+
+}
+.navbar  {
+    margin-top: 94px; 
+}
+.exit {
+    background-color: rgba(229, 82, 65, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+.burger_container {
+   padding: 20px 0px;
+   
+}
+.info {
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #6B5AF9;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.column {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    ul {
+        min-width: 220px;
+        max-height: 173px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
+        @media screen and (max-width:1000px){
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    li {
+        position: relative;
+        right: 0;
+        top: 0;
+        padding: 0px 10px;
+    }
+    li::after {
+        content: "";
+        width: 10px;
+        height: 15px;
+        background-image: url("../../../../public/assets/v_black.png");
+        background-repeat: repeat-x;
+        position: absolute;
+        right: 13px;
+        top: 5px;
+        
+    }
+    .line {
+        width: 100%;
+        background-color: #DBDFEC;
+        height: 1px;
+        
+    }
+}
+.nav_item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 10px;
+    gap: 13px;
+    
+}

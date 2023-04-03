@@ -1,0 +1,135 @@
+@keyframes anim {
+    0% { 
+        opacity: 0; 
+    }   
+    50% { 
+        opacity: 0.5; 
+    }
+    100% { 
+        opacity: 1; 
+    }
+   }
+.help {
+    min-height: 750px;
+    background-color: #F4F4F4;
+    position: relative;
+    @media screen and (max-width:768px){
+        img {
+            opacity: 0.2;
+        }
+        
+    }
+    .red_bg {
+        position: absolute;
+        right: 0;
+        animation: anim 3s ease-in-out;
+        @media screen and (max-width:768px) {
+        height: 100%;
+        width: 100%;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: right;
+            animation: anim 5s ease-in-out;
+        }
+    }
+    .dots {
+        position: absolute;
+        right: 0;
+        z-index: 10;
+        bottom: 133px;
+        animation: anim 3s ease-in-out;
+    }
+    .romb {
+        position: absolute;
+        left: 55px;
+        bottom: 164px;
+        animation: anim 3s ease-in-out;
+        @media screen and (max-width:375px){
+            display: none;
+            
+        }
+    }
+    .vertdots {
+        animation: anim 3s ease-in-out;
+        position: absolute;
+        left: 257px;
+        bottom: 0;
+        @media screen and (max-width:975px){
+            display: none;  
+    }
+    }
+}
+.help_container {
+    padding-top: 155px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    @media screen and (max-width:768px) {
+        flex-direction: column;
+        
+    }
+}
+.img_girls {
+    position: absolute;
+    right: 15%;
+    bottom: 0;
+    @media screen and (max-width:768px) {
+        right: 0;
+        
+    }
+}
+.text_items {
+    max-width: 600px;
+    display: flex;
+    gap: 45px;
+    flex-direction: column;
+    position: relative;
+    z-index: 30;
+    @media screen and (max-width:390px){
+        h1 {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        
+    }
+    li { 
+        position: relative;
+        padding-left: 41px;
+    }
+
+li:before {
+    position: absolute;  
+    left: -4px;
+    width: 36px;
+    height: 36px;
+    background-image: url("../../.././public/assets/list.png");
+    content: "";
+}
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+    
+    .btn_help {
+        display: flex;
+        @media screen and (max-width:768px){
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        gap: 15px;
+        @media screen and (max-width:376px){
+            flex-wrap: wrap;            
+        }
+    }
+    
+}
+

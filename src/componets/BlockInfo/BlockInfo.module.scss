@@ -1,0 +1,31 @@
+.block_title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    h4 {
+        color: #E55241;
+    }
+}
+.block_items {
+    width: 100%;
+    margin-top: 48px;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.img_pagin {
+    padding-top: 26px;
+}
+.block_container {
+    padding-top: 66px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+.blockinfo {
+    padding-bottom: 66px;
+}

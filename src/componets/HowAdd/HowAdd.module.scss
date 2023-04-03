@@ -1,0 +1,130 @@
+.howAdd_container {
+    padding: 66px 0px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:768px){
+        padding: 66px 10px;
+        flex-direction: column;
+        gap: 15px;
+        
+    }
+}
+.how_title {
+    display: flex;
+    gap: 15px;
+}
+.howQwestion {
+    margin: 0px -15px;
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    gap: 27px;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    padding: 59px 39px;
+    p {
+        max-width: 500px;
+    }
+    span {
+        color: #E55241;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.howAdd_input {
+    margin: 0px -15px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 50%;
+    gap: 15px;
+    justify-content: space-between;
+    input {
+        flex: 0 1 50%;
+        border: 2px solid #F4F4F4;
+        padding: 25px 15px;
+        border-radius: 5px;
+        width: 100%;
+        margin: 0px -7px;
+        color: #A6A6A6;
+        &::placeholder {
+            color: #A6A6A6;
+        }
+    }
+}
+.input_item {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:768px){
+        padding: 0px 10px;
+    }
+}
+.radio_input {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: center;
+    user-select: none;
+    .radio {
+       height: 24px;
+       width: 24px;
+       border: 2px solid #DBDFEC;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
+.how_btns {
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: white;
+    button {
+        min-height: 70px;
+        flex: 0 1 60%;
+        background-color: #E55241;
+        border-radius: 4px;
+    }
+    :last-child {
+        background-color: white;
+        color: #E55241;
+        border: 2px solid #E55241;
+        flex: 0 1 40%;
+    }
+}
+.qw_input {
+    flex: 0 1 50%;
+    display: flex;
+    margin: 0px -8px;
+    input {
+        flex: 0 1 70%;
+        border: 2px solid #F4F4F4;
+        padding: 25px 15px;
+        border-radius: 5px;
+        color: #A6A6A6;
+        margin: 0px 2px 0px 0px;
+
+        &::placeholder {
+            color: #A6A6A6;
+        }
+    }
+}
+.qw {
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px 19px;
+    flex: 0 1 35%;
+    background-color: #DBDFEC;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

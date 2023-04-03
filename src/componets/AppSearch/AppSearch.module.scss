@@ -1,0 +1,39 @@
+.loap {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background: rgba(229, 82, 65, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    &:active {
+        opacity: 0.5;
+        transform: rotateX(15deg);
+    }
+}
+.app_search {
+    display: flex;
+    position: relative;
+    input {
+        position: absolute;
+        background-color: white;
+        right: 44px;
+        top: 0;
+        width: 611px;
+        height: 44px;
+        padding-left: 15px;
+        border: 1px solid #DBDFEC;
+        border-radius: 4px;
+        @media screen and (max-width: 900px){
+            width: 300px;
+        }
+        &::placeholder {
+            color: #DBDFEC;
+        }
+    }
+}
+.search_container {
+    display: flex;
+}

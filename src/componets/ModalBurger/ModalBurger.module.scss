@@ -1,0 +1,69 @@
+.modal {
+    width: 121px;
+    min-height: 0px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: min-height 1.5s ease;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.modal_img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_active {
+    display: flex;
+    justify-content: flex-start;
+    width: 121px;
+    min-height: 200px;
+    transition: min-height 1s ease;
+    box-shadow: 3px 2px 5px rgb(225, 223, 223);
+    align-items: flex-start;
+}
+.img {
+    transform: rotate(0deg);
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+.img_active {
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform 1s ease;
+}
+.top_nav_text {
+    cursor: pointer;
+}
+.modal_item {
+    cursor: pointer;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    transition: padding 1s ease;
+}
+.modal_item_active {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    transition: padding-bottom 1s ease;
+    
+}
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #F4F4F4;
+}
+.item_container {
+    width: 100%;
+    &:hover {
+        color: red;
+        background-color: #FCEEEC;
+    }
+}

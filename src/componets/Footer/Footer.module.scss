@@ -1,0 +1,109 @@
+@import "../../styles/index.scss";
+.footer {
+    min-height: 346px;
+    background-color: #272727;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer_bottom {
+    background-color: #202020;
+    
+}
+.footer_bottom_container {
+    padding: 15px 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.politic {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .stick {
+        width: 1px;
+        height: 20px;
+        background-color: white;
+    }
+}
+.footer_column {
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    display: flex;
+    gap: 70px;
+    @media screen and (max-width:1000px){
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    ul {
+        min-width: 220px;
+        max-height: 173px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        @media screen and (max-width:1000px){
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    li {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    li::after {
+        content: "";
+        width: 5px;
+        height: 15px;
+        background-image: url("../../../public/assets/VV.svg");
+        background-repeat: repeat-x;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        
+    }
+    .line {
+        width: 100%;
+        background-color: #2F2F2F;
+        height: 1px;
+        
+    }
+}
+.column_bg {
+    position: relative;
+    .img_bg {
+        top: 0;
+        position: absolute;
+    }
+}
+.footer_container {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    @media screen and (max-width:1000px){
+        flex-direction: column;   
+    }
+}
+.sotials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 173px;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    .icons {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
