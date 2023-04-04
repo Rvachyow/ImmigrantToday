@@ -2,6 +2,8 @@ import style from "./MenuBurger.module.scss";
 import ReactDOM from "react-dom";
 import { Container } from "../../Container/Container";
 import { ModalBurger } from "../../ModalBurger/ModalBurger";
+import { ItemsMenuMobile } from "../ItemsMenuMobile/ItemsMenuMobile";
+
 const portal = document.getElementById("portal");
 
 export const MenuBurger = ({ toggleMenu }: { toggleMenu:any }) => 
@@ -24,17 +26,17 @@ export const MenuBurger = ({ toggleMenu }: { toggleMenu:any }) =>
               "Українська"]} text="Русский" img="./assets/global.png"></ModalBurger>
         </div>
         <div className={style.line}></div>
-        <li>Иммиграция</li>
+        <ItemsMenuMobile>Имиграция</ItemsMenuMobile>
         <div className={style.line}></div>
-        <li>Учеба</li>
+        <ItemsMenuMobile>Учеба</ItemsMenuMobile>
         <div className={style.line}></div>
-        <li>Работа</li>
+        <ItemsMenuMobile>Работа</ItemsMenuMobile>
         <div className={style.line}></div>
-        <li>Визы</li>
+        <ItemsMenuMobile>Визы</ItemsMenuMobile>
         <div className={style.line}></div>
-        <li>Услуги и курсы</li>
+        <ItemsMenuMobile>Услуги</ItemsMenuMobile>
         <div className={style.line}></div>
-        <li>Блог</li>
+        <ItemsMenuMobile>Блог</ItemsMenuMobile>
         <div className={style.line}></div>
       </ul>   
     </div>,

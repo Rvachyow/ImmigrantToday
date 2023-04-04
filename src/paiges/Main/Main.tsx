@@ -5,7 +5,11 @@ import { BlockInfo } from "../../componets/BlockInfo/BlockInfo";
 import { HowStart } from "../../componets/HowStart/HowStart";
 import { AboutProject } from "../../componets/AboutProject/AboutProject";
 import { HowAdd } from "../../componets/HowAdd/HowAdd";
-import { BLOCK_ITEM_IMIGRATION, BLOCK_ITEM_STUDY, BLOCK_ITEM_VISI, BLOCK_ITEM_WORK } from "../../componets/BlockInfo/constants";
+import { 
+  BLOCK_ITEM_IMIGRATION, 
+  BLOCK_ITEM_STUDY, 
+  BLOCK_ITEM_VISI, 
+  BLOCK_ITEM_WORK } from "../../componets/BlockInfo/constants";
 export const Main = () => {
   return <div className={style.main}>
     <HelpImigration></HelpImigration>

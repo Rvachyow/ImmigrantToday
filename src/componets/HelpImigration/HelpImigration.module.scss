@@ -17,7 +17,6 @@
         img {
             opacity: 0.2;
         }
-        
     }
     .red_bg {
         position: absolute;
@@ -69,7 +68,7 @@
     display: flex;
     @media screen and (max-width:768px) {
         flex-direction: column;
-        
+        padding-bottom: 50px;
     }
 }
 .img_girls {
@@ -92,8 +91,13 @@
         h1 {
             font-size: 24px;
             line-height: 36px;
+        }  
+    }
+    @media screen and (max-width:768px){
+        h1 {
+            font-size: 30px;
+            line-height: 36px;
         }
-        
     }
     li { 
         position: relative;

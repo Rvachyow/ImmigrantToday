@@ -1,0 +1,33 @@
+.item {
+    li {
+        position: relative;
+        right: 0;
+        top: 0;
+        padding: 0px 10px;
+    }
+    li::after {
+        content: "";
+        width: 10px;
+        height: 15px;
+        background-image: url("../../../../public/assets/v_black.png");
+        background-repeat: repeat-x;
+        position: absolute;
+        right: 13px;
+        top: 5px;
+        
+    }
+}
+.popup {
+    width: 100%;
+    background-color: white;
+    box-shadow: 3px 2px 5px rgb(225, 223, 223);
+    height: 0px;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    transition: height 1s ease;
+}
+.popup_active {
+    height: 300px;
+    transition: height 1s ease;
+}

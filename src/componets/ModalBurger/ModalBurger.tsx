@@ -3,6 +3,7 @@ import React from "react";
 import clsx from "clsx";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { getWeather } from "../../redux/slices/weatherSlice";
+
 export const ModalBurger = ({ items, img, text, isWeather }: { items:Array<any>, img?:string, 
   text?: string, isWeather?:boolean}) => {
 
